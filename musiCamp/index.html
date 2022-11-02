@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <title>Visit Craiova</title>
+</head>
+
+<body>
+    <header class="position-relative" id="home">
+        <div class="bg-image img-bg" style="background-image: url('images/bg-image.jpg'); height: 100vh; opacity: .92;"></div>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+            <div class="container">
+                <a href="#home" class="navbar-brand">MusiCamp</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about_us" class="nav-link">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#team" class="nav-link">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faq" class="nav-link">Questions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+        <div class="position-absolute start-50 bottom-0 mb-5 pb-5">
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#register">Sing with us</button>
+                    <a href="#about_us" class="text-light"><span class="arrow-down"></span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" tabindex="-1" id="register" aria-labelledby="registerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="registerLabel">Enrollment</h3>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fill out this form and we will get back to you!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">First Name</label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="uploadFile" class="col-form-label">Motivation letter</label>
+                            <input type="file" class="form-control" id="uploadFile">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about_us">
+        <div class="container">
+            <h2 class="text-center mt-5 fw-bold">About us</h2>
+            <div class="row g-2 mt-5">
+                <div class="col-md text-end" data-aos="fade-right">
+                    <h3>2015</h3>
+                    <p class="lead">We started</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam ratione vero est in? Officia repudiandae at provident ab natus, nobis voluptatibus inventore animi, impedit recusandae, reiciendis nesciunt laboriosam magnam.</p>
+                </div>
+
+                <div class="col-md" data-aos="zoom-in">
+                    <img src="images/2015.jpg" alt="2015" class="img-fluid img-thumbnail rounded-circle w-50 mx-auto d-block">
+                </div>
+
+                <div class="col-md"></div>
+            </div>
+
+            <div class="row g-2 mt-5">
+                <div class="col-md"></div>
+
+                <div class="col-md" data-aos="zoom-in">
+                    <img src="images/2017.jpg" alt="2017" class="img-fluid img-thumbnail rounded-circle w-50 mx-auto d-block">
+                </div>
+
+                <div class="col-md" data-aos="fade-left">
+                    <h3>2017</h3>
+                    <p class="lead">Small performances outside</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, similique laborum iure, quasi, eos praesentium magnam facere enim omnis quaerat delectus sunt deserunt velit perspiciatis?</p>
+                </div>
+            </div>
+
+            <div class="row g-2 mt-5">
+                <div class="col-md text-end" data-aos="fade-right">
+                    <h3>2019</h3>
+                    <p class="lead">Concerts</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolor nihil rem quae consectetur est voluptate accusantium obcaecati! In quidem hic tempore repudiandae reprehenderit maiores accusantium dolorem nam perspiciatis nulla eos, laudantium rerum!</p>
+                </div>
+
+                <div class="col-md" data-aos="zoom-in">
+                    <img src="images/2019.jpg" alt="2019" class="img-fluid img-thumbnail rounded-circle w-50 mx-auto d-block">
+                </div>
+
+                <div class="col-md"></div>
+            </div>
+
+            <div class="row g-2 mt-5">
+                <div class="col-md"></div>
+
+                <div class="col-md" data-aos="zoom-in">
+                    <img src="images/2020.jpg" alt="2020" class="img-fluid img-thumbnail rounded-circle w-50 mx-auto d-block">
+                </div>
+
+                <div class="col-md" data-aos="fade-left">
+                    <h3>2020</h3>
+                    <p class="lead">Our Camp</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quia voluptatem modi, illo nostrum non voluptatibus necessitatibus dolor eos enim tempora quas commodi reprehenderit aliquam itaque fugiat numquam similique porro laudantium! Illum quas recusandae fuga!</p>
+                </div>
+            </div>
+
+            <div class="row g-2 mt-5">
+                <div class="col-md text-end" data-aos="fade-right">
+                    <h3>2021</h3>
+                    <p class="lead">The story goes on with you</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, similique laborum iure, quasi, eos praesentium magnam facere enim omnis quaerat delectus sunt deserunt velit perspiciatis?</p>
+                </div>
+
+                <div class="col-md" data-aos="zoom-in">
+                    <img src="images/2021.jpg" alt="2021" class="img-fluid img-thumbnail rounded-circle w-50 mx-auto d-block">
+                </div>
+
+                <div class="col-md"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-light mt-5">
+        <div class="container p-5 text-center">
+            <h2 class="fw-bold">Services</h2>
+            <p class="lead">What we bring!</p>
+            <div class="row g-4">
+                <div class="col-md" data-aos="fade-up-right">
+                    <div class="card text-white bg-dark">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-music-note-list"></i>
+                            </div>
+                            <h3 class="card-title">Recording Studio</h3>
+                            <p class="card-text mt-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quo hic molestiae facilis pariatur. Impedit.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-mic"></i>
+                            </div>
+                            <h3 class="card-title">Various Instruments</h3>
+                            <p class="card-text mt-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quo hic molestiae facilis pariatur. Impedit.</p>
+                            <a href="#" class="btn btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md" data-aos="fade-up-left"> 
+                    <div class="card text-white bg-dark">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-music-note-list"></i>
+                            </div>
+                            <h3 class="card-title">Qualified Trainers</h3>
+                            <p class="card-text mt-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quo hic molestiae facilis pariatur. Impedit.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="mt-5">
+        <div class="container text-center p-5">
+            <h2 class="fw-bold">Team</h2>
+                <p class="lead">Our qulified Personnel</p>
+            </h2>
+            <div class="row g-4">
+                <div class="col-md" data-aos="fade-down-right">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/women/40.jpg" class="rounded-circle" alt="trainer_1"/>
+                            <h3 class="card-title">Anna Smith</h3>
+                            <p class="card-text">Lorem ipsum.</p>
+                            <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                            <a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+                            <a href="#" class="bi bi-instagram text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md" data-aos="fade-down">
+                    <div class="card text-white bg-dark text-light">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/men/20.jpg" class="rounded-circle" alt="trainer_2"/>
+                            <h3 class="card-title">Adam Cooper </h3>
+                            <p class="card-text">Lorem ipsum.</p>
+                            <a href="#" class="bi bi-twitter text-light mx-1"></a>
+                            <a href="#" class="bi bi-facebook text-light mx-1"></a>
+                            <a href="#" class="bi bi-linkedin text-light mx-1"></a>
+                            <a href="#" class="bi bi-instagram text-light mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md" data-aos="fade-down-left">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/women/8.jpg" class="rounded-circle" alt="trainer_3"/>
+                            <h3 class="card-title">Katie Watson</h3>
+                            <p class="card-text">Lorem ipsum.</p>
+                            <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                            <a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+                            <a href="#" class="bi bi-instagram text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 bg-light" id="faq">
+        <div class="container p-5">
+            <h2 class="fw-bold text-center">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush mt-5" id="questions" data-aos="zoom-out">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_question_one">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_one" aria-expanded="false" aria-controls="questionOne">
+                            Where is the Camp located exactly?
+                      </button>
+                    </h2>
+                    <div id="question_one" class="accordion-collapse collapse" aria-labelledby="heading_question_one" data-bs-parent="#questions">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsa distinctio iste nulla?</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_question_two">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_two" aria-expanded="false" aria-controls="questionTwo">
+                            What are the costs?
+                      </button>
+                    </h2>
+                    <div id="question_two" class="accordion-collapse collapse" aria-labelledby="heading_question_two" data-bs-parent="#questions">
+                      <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut repellat quaerat ipsum dolorum sunt! Eligendi et consequatur unde explicabo commodi.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_question_three">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_three" aria-expanded="false" aria-controls="questionThree">
+                            What are the steps to participate?
+                      </button>
+                    </h2>
+                    <div id="question_three" class="accordion-collapse collapse" aria-labelledby="heading_question_three" data-bs-parent="#questions">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odio quod voluptatum! Dolores delectus quas aut distinctio. Ad sapiente necessitatibus, similique voluptatem doloribus, velit quidem, id hic suscipit quaerat et!</div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_question_five">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_five" aria-expanded="false" aria-controls="questionFive">
+                            What activities are you running?
+                        </button>
+                    </h2>
+                    <div id="question_five" class="accordion-collapse collapse" aria-labelledby="heading_question_five" data-bs-parent="#questions">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quis et quia ad! Cupiditate reprehenderit soluta aperiam, enim numquam, laborum recusandae excepturi magni aut mollitia harum dolore temporibus voluptates nam hic aliquam ducimus in sit, cum velit doloremque. Quas officiis ut optio ratione magni expedita rem odit ipsum distinctio hic animi fugiat voluptatum ipsa, voluptate, quia assumenda autem. Quaerat, ratione.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_question_four">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_four" aria-expanded="false" aria-controls="questionFour">
+                            How long will be the camp?
+                      </button>
+                    </h2>
+                    <div id="question_four" class="accordion-collapse collapse" aria-labelledby="heading_question_four" data-bs-parent="#questions">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod animi, repudiandae facere doloremque dolor voluptatibus soluta cupiditate doloribus cum!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 bg-dark text-light" id="contact">
+        <div class="container p-5">
+            <h2 class="text-center">Contact Us</h2>
+            <form class="mt-5" data-aos="zoom-in">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone:</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+
+                <div class="text-center mt-5">
+                    <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer py-4 position-relative">
+        <div class="container">
+            <div class="row  text-center align-items-center">
+                <div class="col-md">
+                    <p class="lead my-auto">Copyright &copy; 2015 MusiCamp</p>  
+                </div>
+
+                <div class="col-md">
+                    <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                    <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                    <a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+                    <a href="#" class="bi bi-instagram text-dark mx-1"></a>
+                </div>
+
+                <div class="col-md"></div>
+            </div>
+            <a href="#" class="position-absolute bottom-0 end-0 p-3">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
